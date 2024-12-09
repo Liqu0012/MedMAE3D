@@ -3,7 +3,7 @@ import torch.nn as nn
 from einops import rearrange
 
 class MAE_3D_Loss(nn.Module):
-    def __init__(self, patch_embed, in_chans=1, perc_weight=0.5, norm_pix_loss=True):
+    def __init__(self, patch_embed, in_chans=1, perc_weight=1, norm_pix_loss=True):
         super(MAE_3D_Loss, self).__init__()
         self.patch_embed = patch_embed  # 传入的 patch_embed 实例
         self.in_chans = in_chans
