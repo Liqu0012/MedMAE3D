@@ -19,6 +19,7 @@ from utils.pos_embed import get_3d_sincos_pos_embed
 from utils.loss import MAE_3D_Loss
 import timm.models.vision_transformer as timm_vit
 
+
 class MAE3D(nn.Module):
     def __init__(self, img_size, patch_size=16, in_chans=1, temp_stride=1,
                  embed_dim=1024, depth=24, num_heads=16,
