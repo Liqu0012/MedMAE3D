@@ -190,6 +190,7 @@ class MAE3D(nn.Module):
         """
         # 直接调用 MAE_3D_Loss 实例的 forward_loss 方法
         loss = self.loss_fn.forward_loss(imgs, pred)
+        
         return loss
         # target = self.patchify3D(imgs)
         # if self.norm_pix_loss:
